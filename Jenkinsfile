@@ -1,36 +1,36 @@
-pileline {
+	pileline {
 
-  	agent any
+		agent any
 
-	  stage {
+		stage {
 
-	  	stage("Build") {
+			stage("Build") {
 
-			  	steps {
-				  	  echo 'building the application...'
-			  	}
-		  	}
+				steps {
+					echo 'building the application...'
+				}
+			}
 
-	  	stage("Test") {
+			stage("Test") {
 
-				  steps {
-					    echo 'Testing the application...'
-				  }
-			  }
+				steps {
+					echo "Testing the application..."
+				}
+			}
 
-		  stage("Release") {
+			stage("Release") {
 
-				  steps {
-					    echo 'Releaseing the application...'
-				  }
-		  	}
+				steps {
+					echo 'Releaseing the application...'
+				}
+			}
 
-		  stage("Deploy") {
+			stage("Deploy") {
 
-				  steps {
-					    echo 'Deploying the application...'
-				  }
-			  }
-	  	}
-  	}
-  }
+				steps {
+					echo 'Deploying the application...'
+				}
+			}
+		}
+	}
+}
