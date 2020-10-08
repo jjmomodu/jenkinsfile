@@ -7,28 +7,28 @@ pileline {
 	  	stage("Build") {
 
 			  	steps {
-				  	  echo "building the application..."
+				  	  echo 'building the application...'
 			  	}
 		  	}
 
 	  	stage("Test") {
 
 				  steps {
-					    echo "Testing the application..."
+					    echo 'Testing the application...'
 				  }
 			  }
 
 		  stage("Release") {
 
 				  steps {
-					    echo "Releaseing the application..."
+					    echo 'Releaseing the application...'
 				  }
 		  	}
 
 		  stage("Deploy") {
 
 				  steps {
-					    echo "Deploying the application..."
+					    echo 'Deploying the application...'
 				  }
 			  }
 	  	}
